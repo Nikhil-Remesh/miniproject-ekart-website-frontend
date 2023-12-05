@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFUMES</title>
+    <link rel="stylesheet" href="/CSS/boot.css">
+    <link rel="stylesheet" href="/CSS/project.css">
+</head>
+<body>
+    <div class="containerr">
+        <header>
+            <nav class="navbar fixed-top">
+                <div>
+                    <img src="/image/projlogo.png" alt="" height="56px">
+                </div>
+                <div>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="home.html">HOME</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SHOP</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="shop.html">SALES</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="Aboutus.html">ABOUT US</a></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="contact.html">CONTACT</a></li>
+                        <li class="list-inline-item me-4"><img src="/image/searchpurp.png" height="20px" id="search" alt=""><input type="text" id="sbox"></li>
+                        <li class="list-inline-item me-4"><a class="text-decoration-none text-muted" href="cart.html"><img src="/image/trolley-cart.png" height="20px" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="mt-5 pt-4">
+            <div class="row">
+                <div class="col-lg-7 " >
+                    <img src="https://images2.alphacoders.com/641/641458.jpg" class=" w-100 h-100" >
+                </div>
+                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                    <div class="text-center">
+                        <p class="heading">Contact us</p>
+                        <p class="text-muted"><i><b>Contact Us To Find Out More</b></i></p>
+                    </div>
+                    <div class="ms-5">
+                        <form id="contact-form" action="">
+                            <input type="text" placeholder="Your name" class="input ms-4" id="name">
+                            <input type="text" placeholder="Your email" class="input ms-4" id="email">
+                            <div class="mt-5 ms-4">
+                                <select name="" id="" class="input text-muted dropdown">
+                                    <option value="" >Choose Topic</option>
+                                </select>
+                                <input type="text" placeholder="Message" class="input ms-4" id="message">
+                            </div>  
+                            <div class="alert-danger" id="errorcontact">
+                                <p></p>
+                            </div>
+                            <input type="button" value="Submit" class="btn btn-primary ms-3 mt-3 shop-now" onclick="validatecontact()" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="heading">Featured Products</p>
+            </div>
+            <div class="row  mb-5">
+                <div class="col d-flex  justify-content-center">
+                    <div class="card product-card  ">
+                        <a href="product.html"><img class="card-img card-image"
+                                src="https://in.ajmalperfume.com/cdn/shop/products/HatkoraWood-1.jpg?v=1637731950"
+                                alt="image"></a>
+                        <div class="card-body">
+                            <p class="card-title">Hatkora Wood Eau De Parfum 100ml Perfume For Unisex</p>
+                            <p class="text-muted">Rs.11,200.00</p>
+                            <a href="product.html"><button class="btn btn-dark shop-now">Add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card">
+                        <a href="product.html"><img class="card-img card-image"
+                                src="https://in.ajmalperfume.com/cdn/shop/products/Oudesire1600x160001.jpg?v=1638009901"
+                                alt="image"></a>
+                        <div class="card-body">
+                            <p class="card-title">Oudesire Eau De Parfum 100ml Perfume For Unisex</p>
+                            <p class="text-muted">Rs.16,000.00</p>
+                            <a href="product.html"><button class="btn btn-dark shop-now">Add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card">
+                        <a href="product.html"><img class="card-img card-image"
+                                src="https://in.ajmalperfume.com/cdn/shop/products/Kuro1.jpg?v=1638183381"
+                                alt="image"></a>
+                        <div class="card-body">
+                            <p class="card-title">Kuro Eau De Parfum 90ml Perfume For Men </p>
+                            <p class="text-muted">Rs.2,400.00</p>
+                            <a href="product.html"><button class="btn btn-dark shop-now">Add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card product-card">
+                        <a href="product.html"><img class="card-img card-image"
+                                src="https://in.ajmalperfume.com/cdn/shop/products/OUDHMUKHALLAT_CONCENTRATED_6ML_1.jpg?v=1665648092"
+                                alt="image"></a>
+                        <div class="card-body">
+                            <p class="card-title">Oudh Mukhallat Concentrated Perfume Free From Alcohol 6ml For Unisex</p>
+                            <p class="text-muted">Rs.2,250.00</p>
+                            <a href="product.html"><button class="btn btn-dark shop-now">Add to cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-light mt-5 ">
+            <div class="container-fluid">
+                <p class="heading">Join Our Newsletter</p>
+            <div class="subscribed" style="visibility: hidden;">
+                <h1>Thankyou for subscribing</h1>
+            </div>
+            <div class="d-flex">
+                <input class="mt-3 newsletter bg-light input-group" placeholder="YOUR EMAIL" type="email" id="subemail">
+                <button class="btn btn-primary ms-3 shop-now" onclick="subscribe()">Subscribe</button>
+            </div>
+            <div  id="error1" class="alert-danger"><p></p></div>
+            <div class="mt-3 mb-5">
+                <img class="me-1" src="/image/facebook-app-symbol.png" height="20px" alt="">
+                <img class="me-1" src="/image/instagram.png" height="20px" alt="">
+                <img class="me-1" src="/image/twitter.png" height="20px" alt="">
+            </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-between bg-dark">
+                   <div>
+                        <ul class="list-inline">
+                            <li class="text-muted">&copy;&nbsp;2021 All rights reserved </li>
+                        </ul>
+                   </div>
+                   <div>
+                    <ul class="list-inline">
+                        <li class="text-muted list-inline-item">Help & info</li>
+                        <li class="text-muted list-inline-item">Terms & Privacy</li>
+                    </ul>
+               </div>
+            </div>
+    </footer>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/JS/js.js"></script>
+</body>
+</html>
